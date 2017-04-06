@@ -1,0 +1,61 @@
+/*-----------------------公用插值--------------------------------------------*/
+@mixin clearfix {
+  *zoom: 1;
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+  }
+  &:after {
+    clear: both;
+  }
+}/*清除浮动影响*/
+@mixin ellipsis ($num){
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $num;
+}
+/*-----------------公用颜色---------------------------*/
+$color-blue: rgba(20,49,79,1); /*蓝色*/
+$color-gray: rgba(192,192,192,1); /*灰色*/
+$color-gray_s: rgba(126,126,126,1); /*深灰色*/
+$color-gray_t: rgba(230,225,219,.5); /*灰色背景*/
+$color-white: rgba(255,255,255,1); /*白色*/
+$color-wathet: rgba(19,48,78,1); /*浅蓝色*/
+$color-cyan: rgba(39,180,192,1);/*青色*/
+$color-red: rgba(255,0,0,1);/*红色*/
+$color-black: rgba(0,0,0,1);/*黑色*/
+$color-purple: rgba(102,102,153,1);/*紫色*/
+$color-sky-blue: rgba(69,175,224,1);/*天蓝色*/
+$color-green: rgba(105,211,87,1);/*绿色*/
+/*-------------------占位选择器%-----------------------------*/
+//填写简历部分
+%font{
+  font-size: 1.5rem;
+  font-weight: 700;
+}/*字体样式*/
+%input{
+  display: block;
+  width: 75%;
+  padding: 2% 4% 2% 20%;
+  margin: 6% auto;
+  text-align: right;
+  @extend %font;/*引用字体样式*/
+  color: $color-cyan;
+  border: none;
+  outline: none;
+  border-bottom:  .1rem solid $color-gray;
+}
+%button{
+  text-align: center;
+  width: 47%;
+  margin-left: 1.5%;
+  padding: 3% 0;
+  @extend %font;/*引用字体样式*/
+  background: #fff;
+  color: $color-cyan;
+  border: .2rem solid $color-cyan;
+}/*按钮样式*/

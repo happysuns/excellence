@@ -1,0 +1,42 @@
+ html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img ,figure , iframe, div{ margin:0; padding:0; }
+  fieldset, img ,iframe{ border:none; }
+  h1,h2,h3,h4,h5,h6{font-weight: normal;}
+  img{display: block;}
+  address, caption, cite, code, dfn, th, var { font-style:normal; font-weight:normal; }
+  ul, ol { list-style:none; }
+  input { padding-top:0; padding-bottom:0; font-family: "SimSun","宋体";}
+  input::-moz-focus-inner { border:none; padding:0; }
+  select, input { vertical-align:middle; }
+  select, input, textarea { font-size:1.2rem; margin:0; }
+  input[type="text"], input[type="password"], textarea { outline-style:none; -webkit-appearance:none; }
+  textarea { resize:none; }
+  input,textarea{background: none; border: none;}
+  table { border-collapse:collapse; }
+  body { color:#333; font: 0 ,"宋体","Arial Narrow",HELVETICA; background:#fff;letter-spacing: .1rem; }
+  i{font-style: normal;}
+  button{ outline: none; border: none;}
+  a { color:#666; text-decoration:none; }
+  a:visited { color:#666; }
+  a:hover,a:active,a:focus { color:#666; text-decoration:none; }
+
+  /*媒体查询*/
+  @media only screen {
+    @media (min-width:320px) {
+      html{ font-size:53.5%;}
+    }
+    @media (min-width:360px) {
+     html{ font-size:60%;}
+    }
+    @media (min-width:375px) {
+     html{ font-size:62.5%;}
+    }
+    @media (min-width:400px) {
+     html{ font-size:66.5%;}
+    }
+    @media (min-width:450px) {
+     html{ font-size:75%;}
+    }
+    @media (min-width:540px) {
+     html{ font-size:90%;}
+    }
+  }
